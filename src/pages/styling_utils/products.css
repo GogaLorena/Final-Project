@@ -1,0 +1,15 @@
+.productContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.productContainer > div {
+  display: block;
+  margin: auto;
+  border: blue solid 1px;
+  margin-top: 10%;
+}
+.details {
+  display: flex;
+  justify-content: space-around;
+}

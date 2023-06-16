@@ -1,20 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-.navbar {
-  font-size: 200%;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  /* background-color: black; */
-  width: 100%;
-}
-
-.navbar a {
-  display: flex;
-  margin-right: 5%;
-}
 #intropic {
   position: absolute;
   width: 100%;

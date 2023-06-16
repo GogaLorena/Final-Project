@@ -1,0 +1,15 @@
+.items {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3%;
+}
+body {
+  margin: auto;
+}
+.button {
+  height: 2%;
+}
+#totalPrice {
+  display: flex;
+  justify-content: flex-end;
+}
