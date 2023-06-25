@@ -1,15 +1,79 @@
+.details p {
+  font-family: Calibri;
+  font-weight: lighter;
+  font-size: 20px;
+}
 .productContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0% 5%;
 }
 
 .productContainer > div {
   display: block;
   margin: auto;
-  border: blue solid 1px;
+  /* border: solid 1px; */
   margin-top: 10%;
+  border-radius: 10px;
 }
 .details {
   display: flex;
   justify-content: space-around;
+}
+.paintings img:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+  /* z-index: 5; */
+}
+.paintings {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88.5%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.overlay .title {
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  margin: 10%;
+}
+.overlay:hover {
+  opacity: 0.65;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  /* z-index: 10; */
+}
+.overlay-blur {
+  backdrop-filter: blur(0.5rem);
+}
+.paintings img {
+  border-radius: 10px 10px;
+}
+i {
+  font-size: 11px;
+  margin-right: 4px;
+}
+button:hover {
+  color: gray;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
 }

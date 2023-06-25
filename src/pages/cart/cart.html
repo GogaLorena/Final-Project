@@ -7,16 +7,44 @@
     <title>Cart</title>
     <link rel="stylesheet" href="./../styling_utils/cart.css" />
     <link rel="stylesheet" href="./../styling_utils/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+    />
   </head>
   <body>
     <div class="navbar">
-      <a href="./../../../index.html">Home</a>
-      <a href="./../products/products.html">Products</a>
-      <a href="./cart.html">Cart</a>
-      <a href="./../admin/admin.html">Admin</a>
+      <div class="titlu">
+        <i class="fa-brands fa-think-peaks"></i>
+        <p>ArtWaves: Exquisite Modern Pieces</p>
+      </div>
+      <div class="navigare">
+        <a href="./../../../index.html">Home</a>
+        <a href="./../products/products.html">Products</a>
+        <a href="./cart.html">Cart</a>
+        <a href="./../admin/admin.html">Admin</a>
+      </div>
     </div>
-    <div class="cartContainer">
-      <h2>My cart</h2>
+    <div class="tot">
+      <div class="firstHalf">
+        <div class="cartContainer"></div>
+      </div>
+      <div class="secondHalf">
+        <div class="totalPrice">
+          Order summary:
+          <span id="valoare">0</span>
+        </div>
+        <button id="checkoutBtn">Checkout now</button>
+        <p>Apply a Coupon Code, ArtWaves points on the next step.</p>
+        <div class="icons">
+          <p>We accept:</p>
+          <i class="fa-regular fa-credit-card"></i>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-google-pay"></i>
+          <i class="fa-brands fa-apple-pay"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-amazon-pay"></i>
+      </div>
     </div>
     <script src="cart.js"></script>
   </body>

@@ -7,14 +7,75 @@
     <title>Admin</title>
     <link rel="stylesheet" href="./../styling_utils/admin.css" />
     <link rel="stylesheet" href="./../styling_utils/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+    />
   </head>
   <body>
     <div class="navbar">
-      <a href="../../../index.html">Home</a>
-      <a href="../details/details.html">Details</a>
-      <a href="../cart/cart.html">Cart</a>
-      <a href="../admin/admin.html">Admin</a>
+      <div class="titlu">
+        <i class="fa-brands fa-think-peaks"></i>
+        <p>ArtWaves: Exquisite Modern Pieces</p>
+      </div>
+      <div class="navigare">
+        <a href="../../../index.html">Home</a>
+        <a href="../products/products.html">Products</a>
+        <a href="../cart/cart.html">Cart</a>
+        <a href="../admin/admin.html">Admin</a>
+      </div>
     </div>
-    <h1>Admin page</h1>
+
+    <div class="addProduct">
+      <button id="openModalForAdd">Add a new product</button>
+    </div>
+
+    <div class="addProductModal">
+      <div class="container form-admin">
+        <form class="form-details">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div>
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" />
+          </div>
+          <div>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" />
+          </div>
+          <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" />
+          </div>
+          <div>
+            <label for="image">Image:</label>
+            <input type="text" id="image" name="image" />
+          </div>
+          <div>
+            <label for="piecesAvailable">Pieces available:</label>
+            <input type="text" id="piecesAvailable" name="piecesAvailable" />
+          </div>
+          <div>
+            <input type="submit" value="Submit" id="submitButton" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="productContainer">
+      <div class="productRow">
+        <div class="half1">
+          <p>Product Image</p>
+          <p>Product Name</p>
+        </div>
+        <div class="half2">
+          <p>Price</p>
+          <p>Quantity</p>
+          <p>X</p>
+        </div>
+      </div>
+    </div>
+    <script src="admin.js"></script>
   </body>
 </html>

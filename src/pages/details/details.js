@@ -7,14 +7,13 @@ fetch("https://646e37d19c677e23218b4bb6.mockapi.io/paintings/" + productId)
 
 function displayProductDetails(painting) {
   let currentdiv = `<div class="picAndInfo">
-    <img src="${painting.image}" width="600" height="600"> 
+    <img src="${painting.image}" width="550" height="700"> 
     <div class="more">
-    <p>${painting.name}</p>
-    <p>${painting.price}</p>
-    <p>${painting.description}</p>
-    <p>${painting.author}</p> 
-    <p>${painting.paintedDate}</p> 
-    <p>${painting.piecesAvailable}</p>
+    <p>Painting name:<span> ${painting.name}</span></p>
+    <p>Description:<span> ${painting.description}</span></p>
+    <p>Author:<span> ${painting.author}</span></p> 
+    <p>Pieces available:<span> ${painting.piecesAvailable}</span></p>
+    <p>Price:<span> ${painting.price} $</span></p>
     <button type="button" id="addToCartB" onclick="addToCart()">Add to cart</button>
     </div>
   </div>`;
